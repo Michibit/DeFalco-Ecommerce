@@ -1,0 +1,217 @@
+@import 'nav.css';
+@import 'footer.css';
+
+
+/* Sezione Home */
+.hero-section{
+    
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: linear-gradient(to top,rgb(0,0,0),transparent), url("../img/back.jpg");
+    background-size: cover;
+    background-position: 70% 26%;
+
+    display:flex;
+    justify-content: left;
+
+    align-items: flex-end;
+}
+
+
+
+.hero-section .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+.hero-section .sotto-logo{
+    margin: 10px;
+    padding: 30px;
+   
+}
+
+
+
+
+.corsivo-img{
+    height: 80px;
+    filter: invert(100%) sepia(100%) saturate(16%) hue-rotate(302deg) brightness(106%) contrast(104%);
+}
+
+/* Sezione Prodotto */
+
+.prodotti{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    margin: 60px;
+}
+
+.categoria-prodotti{
+    padding:  0 10vw;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+
+.product-conteiner{
+    padding:  0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+
+.product-conteiner::-webkit-scrollbar{
+    display: none;
+}
+
+.product-card{
+    flex:  0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+
+.product-thumb{
+    width: 100%;
+    height: 350px
+}
+
+
+.discount-tag{
+    position:absolute ;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    color: red;
+    right: 10px;
+    top: 10px;
+}
+
+
+/* Whishlist */
+
+
+.card-btn{
+    position:absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;   
+}
+
+
+product-card:hover .container{
+    opacity: 1;
+}
+
+
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: rgb(202, 193, 193);
+
+}
+
+.product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+
+}
+
+.product-brand{
+    text-transform: uppercase;
+}
+
+
+.product-short-desc{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+
+}
+
+
+.prezzo{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+.prezzo-attuale{
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+
+}
+
+
+/*Collezione */
+
+.collection-container{
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.collection{
+    position: relative;
+}
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.collection:hover img{
+
+    transform: scale(1.1);
+}
+
+.collection p{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3){
+    grid-column: span 2;
+
+}
+

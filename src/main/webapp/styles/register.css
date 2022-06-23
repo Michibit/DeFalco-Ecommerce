@@ -1,0 +1,112 @@
+@import "login.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Jost", sans-serif;
+    background: linear-gradient(
+            to top,
+            #340a4b,
+            #4e1a23
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.main {
+    width: 350px;
+    height: 600px;
+    background: linear-gradient(
+            to top,
+            #b150ff,
+            #ecc1c1
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+
+
+.signup {
+    position: center;
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    color:#4a2571;
+    font-size: 2.3em;
+    justify-content: center;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+input {
+    width: 60%;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 60%;
+    height: 40px;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #4a2571;
+
+    font-size: 1em;
+    font-weight: bold;
+    margin: 20px auto 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-out;
+}
+
+button:hover {
+    transition: 0.3s ease-in;
+    background: #613b8a;
+}
+
+
+.error {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+}
+
+.input-not{
+    font-size: 12px;
+    text-align: center;
+    color: red;
+}
+
+.loginPage{
+    text-align: center;
+}
+
+.errato{
+    border: red solid 2px;
+}
+
+.corretto{
+    border: green solid 2px;
+
+}
+
+
+

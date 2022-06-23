@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Jost", sans-serif;
+    background: linear-gradient(
+            to top,
+            #340a4b,
+            #4e1a23
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.main {
+    width: 650px;
+    height: 300px;
+    background: linear-gradient(
+            to top,
+            #b150ff,
+            #ecc1c1
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+
+
+.signup {
+    position: static;
+    width: 100%;
+    height: 100%;
+}
+
+.loginPage img{
+    position: center;
+    height: 60px;
+    margin-left: 10px;
+
+}
+
+.loginPage{
+    text-align: center;
+    font-size: 18px;
+}
+
+.indirizzamento{
+    font-size: 14px;
+    font-style: italic ;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
