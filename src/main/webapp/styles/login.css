@@ -18,7 +18,6 @@ body {
 }
 
 
-
 .main {
     width: 550px;
     height: 500px;
@@ -30,7 +29,8 @@ body {
     border-radius: 10px 0px 0px 10px;
     box-shadow: 5px 20px 50px #000;
 }
-.donna{
+
+.donna {
     width: 265px;
     height: 500px;
     border-radius: 0 10px 10px 0;
@@ -39,7 +39,7 @@ body {
 
 
 .signup {
-    position:center;
+    position: center;
     width: 100%;
     height: 100%;
 }
@@ -73,14 +73,33 @@ button:hover {
     text-align: center;
 }
 
-.input-not{
+.input-not {
     text-align: center;
     color: red;
 }
 
 
-.registrati, .inlog{
+.registrati, .inlog {
     margin-bottom: 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .donna {
+        display: none;
+    }
+
+    input {
+        width: 40%;
+    }
+
+    button {
+        width: 40%;
+    }
+
+    label {
+        position: relative;
+        left: 30%;
+    }
 }
 

@@ -29,16 +29,15 @@ public class Cliente {
         this.carrello = new ArrayList<>();
     }
 
-    public void aggiungialCarrello(Prodotto p,int quantita){
-        Carrello c = new Carrello();
-        c.setP(p,quantita);
-        this.carrello.add(c);
-    }
-
-
     public Cliente(String username, String pass) {
         this.Username = username;
         this.pass = pass;
+    }
+
+
+    public Cliente() {
+        this.carrello = new ArrayList<>();
+
     }
 
     public ArrayList<Carrello> getCarrello() {
@@ -47,11 +46,6 @@ public class Cliente {
 
     public void setCarrello(ArrayList<Carrello> carrello) {
         this.carrello = carrello;
-    }
-
-    public Cliente() {
-        this.carrello = new ArrayList<>();
-
     }
 
     public String getID() {
@@ -97,5 +91,5 @@ public class Cliente {
     public void setAdmin(boolean admin) {
         this.admin = admin;
     }
-    
+
 }

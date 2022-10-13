@@ -1,23 +1,22 @@
 package controller;
 
-import dao.ClienteDAO;
+import dao.CategoriaDAO;
 import dao.ConnectionDB;
-import dao.ProdottoDAO;
-import model.*;
+import model.Categoria;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 
 public class prova {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        ClienteDAO dao = new ClienteDAO(ConnectionDB.getConnection());
-        Cliente c = dao.cercaUtente("michibit","Cavani00");
-        ProdottoDAO p = new ProdottoDAO(ConnectionDB.getConnection());
+        Connection c = ConnectionDB.getConnection();
+        CategoriaDAO cat = new CategoriaDAO(c);
 
 
-        System.out.println(p.getTotalCartPrice(c.getCarrello()));
+        Categoria da = cat.getCategoriaByGenere("uomo");
 
 
-
+        System.out.println(da.getGenere());
 
 
     }

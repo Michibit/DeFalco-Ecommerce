@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*
+Jquery Autocomplite testo
+ */
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+.ui-menu {
+    position: relative;
+    list-style: none;
+    background-color: white;
+    border-radius: 3px;
+    z-index: 10000;
+    box-shadow: 0 0 3px black;
+    width: 180px;
+    line-height: 200%;
+    font-size: 18px;
+    padding: 15px 0;
+    border: solid 1px grey;
+
+}
+
+.ui-menu .ui-menu-item {
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.ui-menu-item:hover {
+    transition: 0.3s ease;
+    background: gray;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 9;
+}
+
+.nav {
+    overflow: hidden;
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.brand-logo {
+
+    width: 5%;
+    height: auto;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.search {
+    width: 500px;
+    display: flex;
+}
+
+
+.search-box {
+    height: 40px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: none;
+    color: rgb(120, 120, 120);
+    outline: none;
+
+}
+
+.search-btn {
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #383838;
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder {
+    color: #383838
+}
+
+
+.nav-items a {
+    margin-left: 20px;
+}
+
+.nav-items a img {
+    width: 30px;
+}
+
+.links-container {
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid rgb(105, 105, 105);
+}
+
+.link {
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000000;
+    opacity: 0.5;
+}
+
+
+.link:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .nav {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    .nav-items {
+        padding: 5px
+    }
+
+    .search {
+        margin-bottom: 10px
+    }
+}

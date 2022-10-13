@@ -17,7 +17,7 @@ import java.util.Date;
 public class Spedizione {
     private String id, modalita, idOrdine;
     private Date Data_Spedizione;
-    
+
 
     public Spedizione(String id, String modalita, String idOrdine, Date Data_Spedizione) {
         this.id = id;
@@ -57,5 +57,5 @@ public class Spedizione {
     public void setData_Spedizione(Date Data_Spedizione) {
         this.Data_Spedizione = Data_Spedizione;
     }
-    
+
 }

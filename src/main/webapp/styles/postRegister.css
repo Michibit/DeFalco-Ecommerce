@@ -1,11 +1,17 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: "Jost", sans-serif;
     background: linear-gradient(
             to top,
             #340a4b,
@@ -34,21 +40,20 @@ body {
     height: 100%;
 }
 
-.loginPage img{
+.loginPage img {
     position: center;
     height: 60px;
     margin-left: 10px;
 
 }
 
-.loginPage{
+.loginPage {
     text-align: center;
     font-size: 18px;
 }
 
-.indirizzamento{
+.indirizzamento {
     font-size: 14px;
-    font-style: italic ;
     text-align: center;
 }
 
