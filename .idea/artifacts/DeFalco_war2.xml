@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="DeFalco:war2">
+    <output-path>$PROJECT_DIR$/out/artifacts/DeFalco_war2</output-path>
+    <root id="archive" name="WebsiteEsame_war.war">
+      <element id="artifact" artifact-name="WebsiteEsame:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -8,7 +8,7 @@ package model;/*
  */
 
 public class Img {
-    private String URL,idProdotto;
+    private String URL, idProdotto;
 
     public Img(String URL, String idProdotto) {
         this.URL = URL;
@@ -30,5 +30,5 @@ public class Img {
     public void setIdProdotto(String idProdotto) {
         this.idProdotto = idProdotto;
     }
-    
+
 }

@@ -16,7 +16,6 @@ public class Fatturazione {
             indirizzo, cap, citta;
 
 
-
     public Fatturazione(String ID_Cliente, String nome, String cognome, String indirizzo, String cap, String citta) {
         this.ID_Cliente = ID_Cliente;
         this.nome = nome;
@@ -24,6 +23,10 @@ public class Fatturazione {
         this.indirizzo = indirizzo;
         this.cap = cap;
         this.citta = citta;
+    }
+
+    public Fatturazione() {
+
     }
 
     public String getID_Cliente() {
@@ -74,7 +77,5 @@ public class Fatturazione {
         this.citta = citta;
     }
 
-         
 
-    
 }

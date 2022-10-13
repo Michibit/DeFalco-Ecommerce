@@ -17,8 +17,33 @@ import java.util.ArrayList;
 public class Prodotto {
     private double prezzo, peso;
     private String decrizione,
-            ID, nome, img, categoria;
+            ID, nome, img, genere, nomeCategoria;
     private ArrayList<Img> galleriaImg;
+
+    public Prodotto(double prezzo, double peso,
+                    String descrizione, String ID, String nome, String img, String genere, String nomeCategoria) {
+        this.prezzo = prezzo;
+        this.peso = peso;
+        this.decrizione = descrizione;
+        this.ID = ID;
+        this.nome = nome;
+        this.img = img;
+        this.genere = genere;
+        this.nomeCategoria = nomeCategoria;
+        this.galleriaImg = new ArrayList<>();
+    }
+
+    public Prodotto() {
+        this.galleriaImg = new ArrayList<>();
+    }
+
+    public String getGenere() {
+        return genere;
+    }
+
+    public void setGenere(String genere) {
+        this.genere = genere;
+    }
 
     public String getImg() {
         return img;
@@ -44,27 +69,10 @@ public class Prodotto {
         this.galleriaImg = galleriaImg;
     }
 
-    public Prodotto(double prezzo, double peso,
-                    String descrizione, String ID, String nome, String img, String categoria) {
-        this.prezzo = prezzo;
-        this.peso = peso;
-        this.decrizione = descrizione;
-        this.ID = ID;
-        this.nome = nome;
-        this.img = img;
-        this.categoria = categoria;
-        this.galleriaImg = new ArrayList<>();
-    }
-
-    public Prodotto() {
-        this.galleriaImg = new ArrayList<>();
-    }
-
     public void addImg(Img e) {
         this.galleriaImg.add(e);
     }
 
-    
 
     public double getPrezzo() {
         return this.prezzo;
@@ -83,7 +91,42 @@ public class Prodotto {
     }
 
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
+        Prodotto prodotto = (Prodotto) o;
+
+        if (Double.compare(prodotto.prezzo, prezzo) != 0) return false;
+        if (Double.compare(prodotto.peso, peso) != 0) return false;
+        if (decrizione != null ? !decrizione.equals(prodotto.decrizione) : prodotto.decrizione != null) return false;
+        if (ID != null ? !ID.equals(prodotto.ID) : prodotto.ID != null) return false;
+        if (nome != null ? !nome.equals(prodotto.nome) : prodotto.nome != null) return false;
+        if (img != null ? !img.equals(prodotto.img) : prodotto.img != null) return false;
+        if (genere != null ? !genere.equals(prodotto.genere) : prodotto.genere != null) return false;
+        if (nomeCategoria != null ? !nomeCategoria.equals(prodotto.nomeCategoria) : prodotto.nomeCategoria != null)
+            return false;
+        return galleriaImg != null ? galleriaImg.equals(prodotto.galleriaImg) : prodotto.galleriaImg == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(prezzo);
+        result = (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(peso);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + (decrizione != null ? decrizione.hashCode() : 0);
+        result = 31 * result + (ID != null ? ID.hashCode() : 0);
+        result = 31 * result + (nome != null ? nome.hashCode() : 0);
+        result = 31 * result + (img != null ? img.hashCode() : 0);
+        result = 31 * result + (genere != null ? genere.hashCode() : 0);
+        result = 31 * result + (nomeCategoria != null ? nomeCategoria.hashCode() : 0);
+        result = 31 * result + (galleriaImg != null ? galleriaImg.hashCode() : 0);
+        return result;
+    }
 
     public String getID() {
         return this.ID;
@@ -102,14 +145,13 @@ public class Prodotto {
     }
 
 
-
-    public String getCategoria() {
-        return this.categoria;
+    public String getNomeCategoria() {
+        return this.nomeCategoria;
     }
 
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setNomeCategoria(String nomeCategoria) {
+        this.nomeCategoria = nomeCategoria;
     }
 
 

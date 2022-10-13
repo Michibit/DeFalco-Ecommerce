@@ -6,26 +6,27 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/styles/footer.css">
 <div class="footer-content">
     <img src="${pageContext.request.contextPath}/img/logo.svg" class="logo" alt="">
     <div class="footer-ul-container">
-        <ul class="categoria">
-            <li class="titolo-categoria">Uomo</li>
-            <li><a href="#" class="links-footer">t-shirt</a></li>
-            <li><a href="#" class="links-footer">maglioni</a></li>
-            <li><a href="#" class="links-footer">jeans</a></li>
-            <li><a href="#" class="links-footer">casual</a></li>
-            <li><a href="#" class="links-footer">elegante</a></li>
+        <ul class="nomeCategoria">
+            <li class="titolo-nomeCategoria">Uomo</li>
+            <li><a href="SearchServlet?search=t-shirt" class="links-footer">t-shirt</a></li>
+            <li><a href="SearchServlet?search=maglioni" class="links-footer">maglioni</a></li>
+            <li><a href="SearchServlet?search=jeans" class="links-footer">jeans</a></li>
+            <li><a href="SearchServlet?search=casual" class="links-footer">casual</a></li>
+            <li><a href="SearchServlet?search=elegante" class="links-footer">elegante</a></li>
         </ul>
 
 
-        <ul class="categoria">
-            <li class="titolo-categoria">Donna</li>
-            <li><a href="#" class="links-footer">t-shirt</a></li>
-            <li><a href="#" class="links-footer">maglioni</a></li>
-            <li><a href="#" class="links-footer">jeans</a></li>
-            <li><a href="#" class="links-footer">casual</a></li>
-            <li><a href="#" class="links-footer">elegante</a></li>
+        <ul class="nomeCategoria">
+            <li class="titolo-nomeCategoria">Donna</li>
+            <li><a href="SearchServlet?search=t-shirt" class="links-footer">t-shirt</a></li>
+            <li><a href="SearchServlet?search=maglioni" class="links-footer">maglioni</a></li>
+            <li><a href="SearchServlet?search=jeans" class="links-footer">jeans</a></li>
+            <li><a href="SearchServlet?search=casual" class="links-footer">casual</a></li>
+            <li><a href="SearchServlet?search=elegante" class="links-footer">elegante</a></li>
         </ul>
     </div>
 </div>
@@ -45,7 +46,8 @@
 <div class="footer-social-container">
     <div>
         <a href="#" class="social-link"><img src="${pageContext.request.contextPath}/img/facebook.png" alt=""></a>
-        <a href="https://www.instagram.com/michele.menzione/" target="_blank" class="social-link"><img src="${pageContext.request.contextPath}/img/instagram.png" alt=""></a>
+        <a href="https://www.instagram.com/michele.menzione/" target="_blank" class="social-link"><img
+                src="${pageContext.request.contextPath}/img/instagram.png" alt=""></a>
         <a href="#" class="social-link"><img src="${pageContext.request.contextPath}/img/Twitter.png" alt=""></a>
     </div>
 </div>

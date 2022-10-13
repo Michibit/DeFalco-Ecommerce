@@ -1,9 +1,12 @@
 package controller;
 
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
 import dao.RegisterDAO;
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -25,7 +28,7 @@ public class registerServlet extends HttpServlet {
         int validate = RegisterDAO.registerUser(username, pass, email);
         String s1 = null;
         if (validate != 0) {
-            s1 = "WEB-INF/view/postRegistration.jsp";
+            s1 = "WEB-INF/view/status/SuccesUser.jsp";
             RequestDispatcher dispatcher = request.getRequestDispatcher(s1);
             dispatcher.forward(request, response);
         }

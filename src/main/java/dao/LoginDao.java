@@ -1,8 +1,9 @@
 package dao;
 
-import dao.ConnectionDB;
-
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class LoginDao {
 
@@ -23,13 +24,9 @@ public class LoginDao {
 
             rs = pst.executeQuery();
             status = rs.next();
-        }
-
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println(e);
-        }
-
-        finally {
+        } finally {
             if (rs != null) {
                 try {
                     rs.close();

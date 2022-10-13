@@ -2,164 +2,69 @@
 <html lang="it">
 
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>De Falco | E-commerce</title>
-    <meta name="description" content="De falco è un marchio di abbigliamento maschile e femminile ">
-    <meta name="robots" content="index, follow">
-    <link rel="icon" href="./icons/icons8-falco-32.png">
-    <link rel="stylesheet" href="./styles/home.css">
+    <meta content="De falco è un marchio di abbigliamento maschile e femminile " name="description">
+    <meta content="index, follow" name="robots">
+    <link href="styles/home2.css" rel="stylesheet" type="text/css">
+    <link href="./icons/icons8-falco-32.png" rel="icon">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
-
-    <!-- Carico il footer in maniera dinamica con JS-->
-    <script rel="preload" src="./script/footer.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="script/AutoComplete.js"></script>
 
 </head>
 
 <body>
-    <nav class="navbar"></nav>
+<nav class="navbar"></nav>
 
-    <!-- Carico la navbar in maniera dinamica con JS-->
-    <script rel="preload" src="./script/nav.js"></script>
-
-
+<!-- Carico la navbar in maniera dinamica con JS-->
+<script src="script/nav.js"></script>
 
 
+<!-- Sezione home-->
+<header class="hero-section">
+    <div class="contenuto">
+        <img alt="" class="logo" src="./img/logo.svg">
+        <p class="sotto-logo"><img class="corsivo-img" src="./img/la-migliore-collezione-di-tutti-i-tempi.svg"></p>
+    </div>
+</header>
 
 
+<!-- Collezioni-->
+<section class="collection-container">
+    <a class="collection" href="UtenteServlet?act=prodotto&genere=Donna">
+        <img alt="" src="./img/Donna-section.jpg">
+        <p class="titolo-collezione"><img class="corsivo-img" src="./img/donna.svg"></p>
 
-    <!-- Sezione home-->
-    <header class="hero-section">
-        <div class="contenuto">
-            <img src="./img/logo.svg" class="logo" alt="">
-                <p class="sotto-logo"><img class="corsivo-img" src="./img/la-migliore-collezione-di-tutti-i-tempi.svg"> </p>
-        </div>
-    </header>
+    </a>
 
-    <!-- Card conteiner-->
-    <section class="prodotti">
-        <h2 class="categoria-prodotti">I Più Venduti</h2>
-        <div class="product-conteiner">
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag">Sconto 50%</span>
-                    <img src="./img/Prodotti.jpg" class="product-thumb" alt="">
+    <a class="collection" href="UtenteServlet?act=prodotto&genere=Uomo">
+        <img alt="" src="./img/Uomo-section.jpg">
+        <p class="titolo-collezione"><img class="corsivo-img" src="./img/uomo.svg"></p>
 
+    </a>
+    <a class="collection" href="UtenteServlet?act=prodotto&genere=Bambino">
+        <img alt="" src="./img/Bambino-section.jpg">
+        <p class="titolo-collezione"><img class="corsivo-img" src="./img/bambino.svg"></p>
 
-                    <button class="card-btn">Aggiungi alla whishlist</button>
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Brand</h2>
-                    <p class="product-short-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-                        quis!</p>
-                    <span class="prezzo">20€</span><span class="prezzo-attuale">40€</span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag">Sconto 50%</span>
-                    <img src="./img/Prodotti.jpg" class="product-thumb" alt="">
+    </a>
 
 
-                    <button class="card-btn">Aggiungi alla whishlist</button>
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Brand</h2>
-                    <p class="product-short-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-                        quis!</p>
-                    <span class="prezzo">20€</span><span class="prezzo-attuale">40€</span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag">Sconto 50%</span>
-                    <img src="./img/Prodotti.jpg" class="product-thumb" alt="">
+</section>
 
 
-                    <button class="card-btn">Aggiungi alla whishlist</button>
+<footer class="footer">
 
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Brand</h2>
-                    <p class="product-short-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-                        quis!</p>
-                    <span class="prezzo">20€</span><span class="prezzo-attuale">40€</span>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag">Sconto 50%</span>
-                    <img src="./img/Prodotti.jpg" class="product-thumb" alt="">
-
-
-                    <button class="card-btn">Aggiungi alla whishlist</button>
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Brand</h2>
-                    <p class="product-short-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-                        quis!</p>
-                    <span class="prezzo">20€</span><span class="prezzo-attuale">40€</span>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <span class="discount-tag">Sconto 50%</span>
-                    <img src="./img/Prodotti.jpg" class="product-thumb" alt="">
-
-
-                    <button class="card-btn">Aggiungi alla whishlist</button>
-
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Brand</h2>
-                    <p class="product-short-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-                        quis!</p>
-                    <span class="prezzo">20€</span><span class="prezzo-attuale">40€</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Animazioni-->
-
-
-    <!-- Collezioni-->
-    <section class="collection-container">
-        <a href="#" class="collection">
-            <img src="./img/Donna-section.jpg" alt="">
-            <p class="titolo-collezione"><img class="corsivo-img" src="./img/donna.svg"></p>
-
-        </a>
-
-        <a href="#" class="collection">
-            <img src="./img/Uomo-section.jpg" alt="">
-            <p class="titolo-collezione"><img class="corsivo-img" src="./img/uomo.svg"></p>
-
-        </a>
-        <a href="#" class="collection">
-            <img src="./img/Bambino-section.jpg" alt="">
-            <p class="titolo-collezione"><img class="corsivo-img" src="./img/bambino.svg"></p>
-
-        </a>
-
-
-    </section>
-
-
-    <!-- Carico il footer in maniera dinamica con JS-->
-    <script src="./script/footer.js"></script>
-
-
-    <footer class="footer">
-
-    </footer>
+</footer>
+<!-- Carico il footer in maniera dinamica con JS-->
+<script src="script/footer.js"></script>
 
 </body>
 
