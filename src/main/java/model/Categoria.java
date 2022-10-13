@@ -2,7 +2,7 @@ package model;
 
 /*
  * CREATE table Categoria(
-	ID CHAR(2) primary key,
+	Genere CHAR(20) primary key,
     Nome char(20),
     Descrizione char(40),
    Icona char(40)
@@ -13,25 +13,29 @@ package model;
 
 
 public class Categoria {
-    
-    private String ID, nome, descrizione;
 
-    public Categoria(String ID, String nome, String descrizione) {
-        this.ID = ID;
+    private String genere, nome, descrizione, icona;
+
+    public Categoria() {
+    }
+
+    public Categoria(String genere, String nome, String descrizione, String icona) {
+        this.genere = genere;
         this.nome = nome;
         this.descrizione = descrizione;
+        this.icona = icona;
     }
 
-    public String getID() {
-        return this.ID;
+    public String getGenere() {
+        return this.genere;
     }
 
-    public void setID(String ID) {
-        this.ID = ID;
+    public void setGenere(String genere) {
+        this.genere = genere;
     }
 
     public String getNome() {
-        return this.nome;
+        return nome;
     }
 
     public void setNome(String nome) {
@@ -39,11 +43,19 @@ public class Categoria {
     }
 
     public String getDescrizione() {
-        return this.descrizione;
+        return descrizione;
     }
 
     public void setDescrizione(String descrizione) {
         this.descrizione = descrizione;
     }
-    
+
+    public String getIcona() {
+        return icona;
+    }
+
+    public void setIcona(String icona) {
+        this.icona = icona;
+    }
 }
+

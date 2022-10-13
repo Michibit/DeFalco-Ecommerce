@@ -15,7 +15,6 @@ import java.util.Date;
  */
 
 
-
 public class Pagamento {
     private String idPag, idOrdine, modalitaPag;
     private double Importo;
@@ -68,5 +67,5 @@ public class Pagamento {
     public void setData_Pagamento(Date Data_Pagamento) {
         this.Data_Pagamento = Data_Pagamento;
     }
-    
+
 }

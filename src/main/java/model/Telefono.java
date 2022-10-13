@@ -10,6 +10,11 @@ package model;/*
 public class Telefono {
     private String num, idCliente;
 
+    public Telefono(String num, String idCliente) {
+        this.num = num;
+        this.idCliente = idCliente;
+    }
+
     public String getNum() {
         return this.num;
     }
@@ -26,10 +31,4 @@ public class Telefono {
         this.idCliente = idCliente;
     }
 
-
-    public Telefono(String num, String idCliente) {
-        this.num = num;
-        this.idCliente = idCliente;
-    }
-    
 }

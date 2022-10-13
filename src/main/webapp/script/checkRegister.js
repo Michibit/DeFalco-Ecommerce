@@ -25,7 +25,6 @@ function validation() {
     var pswcheck = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
 
 
-
     if (usercheck.test(userid)) {
         document.getElementById('username-error').innerHTML = "";
         document.getElementById('username').classList.add("corretto");

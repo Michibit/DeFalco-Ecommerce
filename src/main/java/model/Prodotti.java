@@ -9,8 +9,8 @@ public class Prodotti {
         this.quantita = quantita;
     }
 
-    public double getPrezzoQuantity(){
-        return p.getPrezzo()*quantita;
+    public double getPrezzoQuantity() {
+        return Math.round(p.getPrezzo() * quantita * 100.0) / 100.0;
     }
 
     public Prodotto getP() {

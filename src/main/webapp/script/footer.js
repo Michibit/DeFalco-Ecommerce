@@ -1,27 +1,26 @@
 function createFooter() {
-    let footer = document.querySelector(".footer");
-    footer.innerHTML = `
+    document.querySelector(".footer").innerHTML = `
     <div class="footer-content">
             <img src="/img/logo.svg" class="logo" alt="">
             <div class="footer-ul-container">
-                <ul class="categoria">
-                    <li class="titolo-categoria">Uomo</li>
-                    <li><a href="#" class="links-footer">t-shirt</a></li>
-                    <li><a href="#" class="links-footer">maglioni</a></li>
-                    <li><a href="#" class="links-footer">jeans</a></li>
-                    <li><a href="#" class="links-footer">casual</a></li>
-                    <li><a href="#" class="links-footer">elegante</a></li>
-                </ul>
+                 <ul class="nomeCategoria">
+            <li class="titolo-nomeCategoria">Uomo</li>
+            <li><a href="SearchServlet?search=t-shirt" class="links-footer">t-shirt</a></li>
+            <li><a href="SearchServlet?search=maglioni" class="links-footer">maglioni</a></li>
+            <li><a href="SearchServlet?search=jeans" class="links-footer">jeans</a></li>
+            <li><a href="SearchServlet?search=casual" class="links-footer">casual</a></li>
+            <li><a href="SearchServlet?search=elegante" class="links-footer">elegante</a></li>
+        </ul>
 
 
-                <ul class="categoria">
-                    <li class="titolo-categoria">Donna</li>
-                    <li><a href="#" class="links-footer">t-shirt</a></li>
-                    <li><a href="#" class="links-footer">maglioni</a></li>
-                    <li><a href="#" class="links-footer">jeans</a></li>
-                    <li><a href="#" class="links-footer">casual</a></li>
-                    <li><a href="#" class="links-footer">elegante</a></li>
-                </ul>
+        <ul class="nomeCategoria">
+            <li class="titolo-nomeCategoria">Donna</li>
+            <li><a href="SearchServlet?search=t-shirt" class="links-footer">t-shirt</a></li>
+            <li><a href="SearchServlet?search=maglioni" class="links-footer">maglioni</a></li>
+            <li><a href="SearchServlet?search=jeans" class="links-footer">jeans</a></li>
+            <li><a href="SearchServlet?search=casual" class="links-footer">casual</a></li>
+            <li><a href="SearchServlet?search=elegante" class="links-footer">elegante</a></li>
+        </ul>
             </div>
         </div>
         <p class="footer-title">informazioni sull'azienda</p>

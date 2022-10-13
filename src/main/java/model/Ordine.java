@@ -2,6 +2,7 @@ package model;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Random;
 
 /*
  * CREATE table Ordine(
@@ -16,18 +17,10 @@ import java.util.Date;
 public class Ordine {
     private String ID, userID, stato;
     private ArrayList<Prodotti> prodotti;
-
-    public ArrayList<Prodotti> getP() {
-        return prodotti;
-    }
+    private String dataOrdine;
 
 
-    public void setDataOrdine(String dataOrdine) {
-        this.dataOrdine = dataOrdine;
-    }
-
-    public Ordine(String ID, String userID, String stato, Prodotto p, int quantita, Date dataOrdine) {
-        this.ID = ID;
+    public Ordine(String userID, String stato, Prodotto p, int quantita, Date dataOrdine) {
         this.userID = userID;
         this.stato = stato;
         this.dataOrdine = String.valueOf(dataOrdine);
@@ -35,8 +28,28 @@ public class Ordine {
     }
 
     public Ordine() {
+        Random r = new Random();
+        this.ID = String.valueOf(r.nextInt(10000));
         this.prodotti = new ArrayList<>();
 
+    }
+
+    public Ordine(String ID, String userID, String stato, Date dataOrdine) {
+        this.ID = ID;
+        this.userID = userID;
+        this.stato = stato;
+        this.dataOrdine = String.valueOf(dataOrdine);
+        this.prodotti = new ArrayList<>();
+    }
+
+    public Ordine(String ID, String stato, Date dataOrdine) {
+        this.ID = ID;
+        this.stato = stato;
+        this.dataOrdine = String.valueOf(dataOrdine);
+    }
+
+    public ArrayList<Prodotti> getP() {
+        return prodotti;
     }
 
     @Override
@@ -50,14 +63,6 @@ public class Ordine {
                 '}';
     }
 
-    public Ordine(String ID, String userID, String stato, Date dataOrdine) {
-        this.ID = ID;
-        this.userID = userID;
-        this.stato = stato;
-        this.dataOrdine = String.valueOf(dataOrdine);
-        this.prodotti = new ArrayList<>();
-    }
-
     public ArrayList<Prodotti> getProdotti() {
         return prodotti;
     }
@@ -66,20 +71,12 @@ public class Ordine {
         this.prodotti.add(new Prodotti(p, quantita));
     }
 
-    private String dataOrdine;
-
     public String getUserID() {
         return userID;
     }
 
     public void setUserID(String userID) {
         this.userID = userID;
-    }
-
-    public Ordine(String ID, String stato, Date dataOrdine) {
-        this.ID = ID;
-        this.stato = stato;
-        this.dataOrdine = String.valueOf(dataOrdine);
     }
 
     public String getID() {
@@ -100,6 +97,10 @@ public class Ordine {
 
     public String getDataOrdine() {
         return String.valueOf(this.dataOrdine);
+    }
+
+    public void setDataOrdine(String dataOrdine) {
+        this.dataOrdine = dataOrdine;
     }
 }
 

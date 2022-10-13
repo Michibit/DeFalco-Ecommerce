@@ -9,7 +9,7 @@
 <html>
 
 <head>
-    <link rel="icon" href="./icons/icons8-falco-32.png">
+    <link rel="icon" href="${pageContext.request.contextPath}/icons/icons8-falco-32.png">
     <title>DeFalco | Login </title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/styles/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
@@ -21,16 +21,18 @@
 
         <form action="loginServlet" method="post">
             <label class="entra">Entra</label>
-            <%if(request.getAttribute("msg") != null){
-                String error = (String) request.getAttribute("msg");
+            <%
+                if (request.getAttribute("msg") != null) {
+                    String error = (String) request.getAttribute("msg");
             %>
-            <p class="error"><%= error%></p>
+            <p class="error"><%= error%>
+            </p>
             <% }%>
             <input type="text" name="username" placeholder="Username" required="">
             <input type="password" name="password" placeholder="Password" required="">
             <button>Entra</button>
         </form>
-        <p class="registrati">Non sei registrato? <a href="EntryServlet?get=reg">Registrati</a> </p>
+        <p class="registrati">Non sei registrato? <a href="EntryServlet?get=reg">Registrati</a></p>
     </div>
 
 </div>
