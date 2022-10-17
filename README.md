@@ -24,4 +24,4 @@ Una breve descrizione dei contenuti del sito e delle funzionalità a disposizion
 # La base di dati
 <img width="459" alt="image" src="https://user-images.githubusercontent.com/16355437/196209784-c09333a0-216f-4ecc-9795-4d59fd8e0e17.png">
 <img width="55" alt="image" src="https://user-images.githubusercontent.com/16355437/196209848-29eddbdc-89d6-41f2-911f-403bfbd7fc0f.png">
-![image](https://user-images.githubusercontent.com/16355437/196210404-4bd26e46-f261-4cce-a269-8560c0a57b19.png)
+<img width="486" alt="Senza nome" src="https://user-images.githubusercontent.com/16355437/196211009-56bb5064-a13f-401b-ac7a-3bed9952c391.png">
