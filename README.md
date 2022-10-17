@@ -23,5 +23,7 @@ Una breve descrizione dei contenuti del sito e delle funzionalità a disposizion
 
 # Schema E-R
 <img width="459" alt="image" src="https://user-images.githubusercontent.com/16355437/196209784-c09333a0-216f-4ecc-9795-4d59fd8e0e17.png">
+
+
 # Schema E-R restrutturato
 <img width="486" alt="Senza nome" src="https://user-images.githubusercontent.com/16355437/196211009-56bb5064-a13f-401b-ac7a-3bed9952c391.png">
